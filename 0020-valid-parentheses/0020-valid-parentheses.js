@@ -5,11 +5,6 @@
 var isValid = function (s) {
 	const stack = [];
 	for (let i = 0; i < s.length; i++) {
-		if (stack.length === 0) {
-			stack.push(s[i]);
-			continue;
-		}
-
 		const current = s[i];
 		const last = stack[stack.length - 1];
 
